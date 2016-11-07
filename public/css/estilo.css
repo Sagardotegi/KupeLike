@@ -1,6 +1,6 @@
 /* Fonts
 
-font-family: 'Libre Franklin', sans-serif;
+font-family: 'Roboto', sans-serif;
 font-family: 'Fjalla One', sans-serif;
 font-family: 'Lobster', cursive;
 
@@ -99,8 +99,9 @@ font-family: 'Lobster', cursive;
     margin-left: -40px;
 }
 
-#sidebar {
-  background: #151718;
+.menu {
+    
+  background: rgba(98, 156, 68, 0.64);
   width: 200px;
   height: 100%;
   display: block;
@@ -108,35 +109,28 @@ font-family: 'Lobster', cursive;
   left: -200px;
   top: 0;
   transition: left 0.3s linear;
+  z-index: 1;
 }
 
-#sidebar.visible {
+.visible-menu {
   left: 0;
   transition: left 0.3s linear;
 }
 
-#sidebar-btn {
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 15px;
-  cursor: pointer;
-  margin: 20px;
-  position: absolute;
-  top: 0;
-  right: -60px;
+.menu-links {
+    
+    padding-top: 100px;
+    list-style: none;
 }
 
-#sidebar-btn span {
-  height: 1px;
-  background: #fff;
-  margin-bottom: 5px;
-  display: block;
+.menu-links>li {
+    
+    padding-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
 }
-
-#sidebar-btn span:nth-child(2) { width: 75%; }
-
-#sidebar-btn span:nth-child(3) { width: 50%; }
 
 .btn-social {
     color: #629c44 !important;
@@ -177,5 +171,22 @@ font-family: 'Lobster', cursive;
 }
 
 .list-unstyled {
-    padding-left: 20px;
+    padding-left: 10px !important;
+}
+
+.ftitle {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.green-color {
+    color: #629c44;
+}
+
+.pc-footer {
+    padding: 20px 0px;
+    color: #629c44;
+}
+
+.p-20 {
+    padding: 20px 0px;
 }

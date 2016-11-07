@@ -6,9 +6,14 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit731dc421da497d4c71b8a4e489e0624c
 {
+    public static $classMap = array (
+        'AltoRouter' => __DIR__ . '/..' . '/altorouter/altorouter/AltoRouter.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInit731dc421da497d4c71b8a4e489e0624c::$classMap;
 
         }, null, ClassLoader::class);
     }

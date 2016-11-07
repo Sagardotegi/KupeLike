@@ -10,8 +10,8 @@ $(document).ready(function($) {
             
 });
 
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
         $('.toggle-button').click(function() {
-            $('#sidebar').toggleClass('visible');
+            $('.menu').addClass('visible-menu');
         });
     });
