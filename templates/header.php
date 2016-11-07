@@ -51,5 +51,8 @@
             </div>
             
             <?php
-    require $_SERVER['DOCUMENT_ROOT']."/config/routes.php";
-?>
+                /**
+                 * Cargamos el archivo de configuración de las rutas 
+                 */ 
+                require $_SERVER['DOCUMENT_ROOT']."/config/routes.php";
+            ?>

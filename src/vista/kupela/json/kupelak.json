@@ -6,5 +6,13 @@
         "numero": "13",
         "descripcion": "Kupela que contiene una sidra muy dulce",
         "foto": "\/public\/uploads\/kupelak\/k1.jpg"
+    },
+    {
+        "kupela_id": "2",
+        "sagar_id": "1",
+        "nombre": "Manttoni",
+        "numero": "24",
+        "descripcion": "Hecha con una manzana muy agria",
+        "foto": "\/public\/uploads\/kupelak\/manttoni.jpg"
     }
 ]

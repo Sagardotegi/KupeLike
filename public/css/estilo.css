@@ -8,10 +8,6 @@ font-family: 'Lobster', cursive;
 
 /* Bootstrap Override */
 
-.container-fluid {
-    margin-bottom: 50px;
-}
-
 .navbar {
     
     position: relative !important;
@@ -170,7 +166,6 @@ font-family: 'Lobster', cursive;
 
 .footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
     font-family: 'Basic',sans-serif;
     font-size: 14px;
