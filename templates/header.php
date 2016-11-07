@@ -43,11 +43,6 @@
                        <li><a href="#">Link4</a></li>
                        <li><a href="#">Link5</a></li>
                    </ul>
-                   <div id="sidebar-btn">
-                       <span></span>
-                       <span></span>
-                       <span></span>
-                   </div>
                </div>
                 
             </div>
