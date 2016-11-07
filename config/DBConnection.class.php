@@ -5,7 +5,7 @@
      */
     class DBConnection {
         
-        public function dbConnect()
+        private function dbConnect()
         {
             $datos = $this->obtenerDatosJson();
             

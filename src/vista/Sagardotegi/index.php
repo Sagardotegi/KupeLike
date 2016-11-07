@@ -1,6 +1,6 @@
 <?php
 
-    include "../../controlador/SagardotegiController.class.php";
+    include $_SERVER['DOCUMENT_ROOT']."/src/controlador/SagardotegiController.class.php";
     
     $controller = new SagardotegiController();
     

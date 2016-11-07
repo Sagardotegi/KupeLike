@@ -1,7 +1,6 @@
 <?php
 
-    require "../../../config/DBConnection.class.php";
-    require "../../entidad/Sagardotegi.class.php";
+    require $_SERVER['DOCUMENT_ROOT']."/config/DBConnection.class.php";
 
     /**
      * Controlador de la entidad Sagardotegi
