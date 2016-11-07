@@ -14,4 +14,8 @@ $(document).ready(function($) {
         $('.toggle-button').click(function() {
             $('.menu').addClass('visible-menu');
         });
+        
+        $('.close-menu').click(function() {
+            $('.menu').removeClass('visible-menu');
+        });
     });

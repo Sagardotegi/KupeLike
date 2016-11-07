@@ -1,14 +1,16 @@
+
+
 <!DOCTYPE html>
 <html>
     
     <head>
         
         <title>| KUPELIKE |</title>
-        
+        <link rel="shortcut icon" href="" type="image/png"/>
         <link rel="stylesheet" href="/public/css/estilo.css" type="text/css" />
         <link href="/public/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="/public/vendor/fortawesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Franklin|Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto|Lobster" rel="stylesheet">
         <script src="/public/js/jquery-3.1.1.min.js"></script>
         <script src="/public/js/script.js"></script>
         
@@ -35,14 +37,19 @@
                 
                 </div>
                 
-                <div id="sidebar"> 
-                   <ul>
-                       <li><a href="#">Link1</a></li>
-                       <li><a href="#">Link2</a></li>
-                       <li><a href="#">Link3</a></li>
-                       <li><a href="#">Link4</a></li>
-                       <li><a href="#">Link5</a></li>
-                   </ul>
+                <div class="menu">
+                    <span><i class="fa fa-times fa-2x pull-right close-menu" aria-hidden="true"></i></span>
+                    <ul class="menu-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Map</a></li>
+                        <li><a href="#">Sagardotegiak</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
                </div>
                 
             </div>
+            
+            <?php
+    require $_SERVER['DOCUMENT_ROOT']."/config/routes.php";
+?>

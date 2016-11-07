@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $.getJSON("json/kupelak.json", function(data){
+    $.getJSON("./src/vista/kupela/json/kupelak.json", function(data){
        $.each(data, function(key, val){
            $("#lista-kupelak").append("<div id='kupela-" + val.kupela_id + "' class='thumbnail'></div>");
            $("#kupela-" + val.kupela_id).html(

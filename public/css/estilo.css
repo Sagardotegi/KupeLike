@@ -8,6 +8,10 @@ font-family: 'Lobster', cursive;
 
 /* Bootstrap Override */
 
+.container-fluid {
+    margin-bottom: 50px;
+}
+
 .navbar {
     
     position: relative !important;
@@ -101,7 +105,7 @@ font-family: 'Lobster', cursive;
 
 .menu {
     
-  background: rgba(98, 156, 68, 0.64);
+  background: rgba(98, 156, 68, 0.90);
   width: 200px;
   height: 100%;
   display: block;
@@ -113,23 +117,38 @@ font-family: 'Lobster', cursive;
 }
 
 .visible-menu {
-  left: 0;
-  transition: left 0.3s linear;
+    
+    left: 0;
+    transition: left 0.3s linear;
+}
+
+.close-menu {
+    
+    color: white;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .menu-links {
     
-    padding-top: 100px;
+    padding-top: 60px;
     list-style: none;
 }
+
 
 .menu-links>li {
     
     padding-top: 10px;
     list-style: none;
+}
+    
+.menu-links>li>a {
+    
     text-decoration: none;
     letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: white;
 }
 
 .btn-social {

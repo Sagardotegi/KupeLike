@@ -28,7 +28,7 @@
             /**
              * Devolvemos los datos de la consulta en formato JSON
              */
-            $file = "json/kupelak.json";
+            $file = $_SERVER['DOCUMENT_ROOT']."/src/vista/kupela/json/kupelak.json";
             $json = json_encode($kupelas, JSON_PRETTY_PRINT);
             file_put_contents($file, $json);
         }
