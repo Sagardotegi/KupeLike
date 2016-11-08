@@ -19,3 +19,7 @@ $(document).ready(function($) {
             $('.menu').removeClass('visible-menu');
         });
     });
+    
+$(document).ready(function(){
+  $('.parallax').parallax();
+});

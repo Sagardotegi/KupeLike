@@ -4,31 +4,30 @@
     
     require $project_root."/public/vendor/autoload.php";
     
-    require $_SERVER['DOCUMENT_ROOT']."/config/DBConnection.class.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."/config/DBConnection.class.php";
     
-    include $_SERVER['DOCUMENT_ROOT']."/src/controlador/KupelaController.class.php";
-    include $_SERVER['DOCUMENT_ROOT']."/src/controlador/SagardotegiController.class.php";
+    include_once $_SERVER['DOCUMENT_ROOT']."/src/controlador/KupelaController.class.php";
+    include_once $_SERVER['DOCUMENT_ROOT']."/src/controlador/SagardotegiController.class.php";
     
-    /**
-     * Cargamos los controladores
-     */
-    $kupela = new KupelaController();
-    $sagardotegi = new SagardotegiController();
-    
+    use Slim\Http\Request;
+    use Slim\Http\Response;
     $app = new \Slim\App();
     
-    $app->get('/', function(){
-       include_once $project_root."index.php";
-    });
     
-    $app->get('/kupelak', function(){
-        include_once $project_root."src/vista/kupela/index.php";
-        $kupela->index();
+    $app->get('/', function(){
+       require_once $project_root."index.php";
     });
     
     $app->get('/sagardotegiak', function(){
-        include_once $project_root."src/vista/sagardotegi/index.php";
+        $sagardotegi = new SagardotegiController();
+        require_once $project_root."src/vista/sagardotegi/index.php";
         $sagardotegi->index();
+    });
+    
+    $app->get('/kupelak/:sagardotegi_id', function($sagardotegi_id){
+        $kupela = new KupelaController();
+        require_once $project_root."src/vista/kupela/index.php";
+        $kupela->index($sagardotegi_id);
     });
     
     $app->run();

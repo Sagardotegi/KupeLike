@@ -40,9 +40,9 @@
                 <div class="menu">
                     <span><i class="fa fa-times fa-2x pull-right close-menu" aria-hidden="true"></i></span>
                     <ul class="menu-links">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="#">Map</a></li>
-                        <li><a href="#">Sagardotegiak</a></li>
+                        <li><a href="sagardotegiak">Sagardotegiak</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">About</a></li>
                     </ul>

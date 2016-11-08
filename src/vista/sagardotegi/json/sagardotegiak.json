@@ -1,0 +1,18 @@
+[
+    {
+        "sagar_id": "1",
+        "nombre": "Petritegi",
+        "latitud": "24",
+        "longitud": "36",
+        "direccion": "jdjksahkdh",
+        "foto": "\/public\/uploads\/sagardotegiak\/petri.png"
+    },
+    {
+        "sagar_id": "2",
+        "nombre": "Lizeaga",
+        "latitud": "25.00025",
+        "longitud": "69.23332",
+        "direccion": "Astigarraga",
+        "foto": "\/public\/uploads\/kupelak\/k1.jpg"
+    }
+]

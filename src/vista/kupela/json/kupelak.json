@@ -2,17 +2,23 @@
     {
         "kupela_id": "1",
         "sagar_id": "1",
-        "nombre": "Pondika",
+        "nombre": "Petritegi",
         "numero": "13",
         "descripcion": "Kupela que contiene una sidra muy dulce",
-        "foto": "\/public\/uploads\/kupelak\/k1.jpg"
+        "foto": "\/public\/uploads\/sagardotegiak\/petri.png",
+        "latitud": "24",
+        "longitud": "36",
+        "direccion": "jdjksahkdh"
     },
     {
-        "kupela_id": "2",
-        "sagar_id": "1",
-        "nombre": "Manttoni",
-        "numero": "24",
-        "descripcion": "Hecha con una manzana muy agria",
-        "foto": "\/public\/uploads\/kupelak\/manttoni.jpg"
+        "kupela_id": "1",
+        "sagar_id": "2",
+        "nombre": "Lizeaga",
+        "numero": "13",
+        "descripcion": "Kupela que contiene una sidra muy dulce",
+        "foto": "\/public\/uploads\/kupelak\/k1.jpg",
+        "latitud": "25.00025",
+        "longitud": "69.23332",
+        "direccion": "Astigarraga"
     }
 ]

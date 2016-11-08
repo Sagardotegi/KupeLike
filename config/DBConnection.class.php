@@ -5,7 +5,7 @@
      */
     class DBConnection {
         
-        private function dbConnect()
+        public function dbConnect()
         {
             $datos = $this->obtenerDatosJson();
             
@@ -30,15 +30,6 @@
             }
             
             return $conexion;
-        }
-        
-        public function query($sql)
-        {
-            /**
-             * Hace una query a la base de datos
-             */
-            $conexion = $this->dbConnect();
-            return mysqli_query($conexion, $sql);
         }
         
         private function obtenerDatosJson()
