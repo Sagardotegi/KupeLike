@@ -28,7 +28,7 @@
                 
                 <nav class="navbar navbar-light bg-faded row">
                   <a id="navbar-ham" class="navbar-ham col-xs-1 toggle-button" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
-                  <a id="navbar-title" class="navbar-title col-xs-5" href="#">Kupelike</a>
+                  <a id="navbar-title" class="navbar-title col-xs-5" href="/">Kupelike</a>
                   <form id="navbar-form" class="navbar-form form-inline pull-right col-xs-6">
                     <input class="form-control searchBox" type="text" placeholder="Search">
                     <button class="btn search-btn" type="submit"><i class="fa fa-search fa-flip-horizontal fa-1x" aria-hidden="true"></i></button>

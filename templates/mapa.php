@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <div class="mapbox">
-      <h1 class="text-center mtitle">Mapa</h1>
+      <h1 class="text-center mtitle green-color">Mapa</h1>
   
       <div id="map" class="mapa"></div>
       
