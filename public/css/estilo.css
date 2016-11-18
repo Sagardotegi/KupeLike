@@ -32,7 +32,7 @@ body {
     border-radius: 0px !important;
     background-color: white;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar-ham {
@@ -43,7 +43,20 @@ body {
     color: #629c44;
 }
 
-.navbar-ham:hover, .navbar-ham:active, .navbar-ham:focus, navbar-title:visited {
+.navbar-ham:hover, .navbar-ham:active, .navbar-ham:focus, navbar-ham:visited {
+    
+    color: #629c44;
+}
+
+.navbar-logo {
+    
+    float: left;
+    padding: 15px 30px !important;
+    line-height: 70px;
+    color: #629c44;
+}
+
+.navbar-logo:hover, .navbar-logo:active, .navbar-logo:focus, navbar-logo:visited {
     
     color: #629c44;
 }
@@ -66,7 +79,7 @@ body {
     color: #629c44 !important;
 }
 
-.navbar-form {
+.navbar-search {
     
     line-height: 100px;
     height: inherit;
@@ -94,7 +107,7 @@ body {
 
 .form-control-widen {
     
-    width: 500px !important;
+    width: 95% !important;
     -webkit-transition: width 1s ease-in-out !important;
     -moz-transition:width 1s ease-in-out !important;
     -o-transition: width 1s ease-in-out !important;
@@ -127,13 +140,14 @@ body {
   left: -200px;
   top: 0;
   transition: left 0.3s linear;
-  z-index: 1;
+  z-index: 3;
 }
 
 .visible-menu {
     
     left: 0;
     transition: left 0.3s linear;
+    position: fixed;
 }
 
 .close-menu {
@@ -165,14 +179,23 @@ body {
     color: white;
 }
 
+.searchResults {
+    
+    position: fixed !important;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+    display: none;
+}
+
 /* Fin Menu*/
 
 /* Welcome */
 
 .welcome {
-    
-    padding-top: 100px;
-    height: 850px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .welcome-text {
@@ -293,15 +316,83 @@ body {
 }
 
 .mapa {
-    height: 650px;
+    height: 700px;
     background: transparent;
+    /*height: 100vh;
+    display: flex;
+    align-items: center;*/
 }
 
-.mapbox {
+.caja {
     padding: 10px 50px 50px 50px;
-    margin: 50px 50px 50px 50px; 
+    margin: 20px 20px; 
     background-color: white;
+    /*min-height: 850px;
+    max-height: 850px;*/
 }
  .mtitle {
     font-family: 'Lobster', cursive;
+    color: #629c44;
  }
+ 
+.carousel-indicators .active {
+    background-color: #629c44 !important;
+}
+
+.carousel-indicators li {
+    border: 1px solid #629c44 !important;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+  
+.carousel {
+      height: 700px;
+}
+ 
+.item {
+      height: 600px
+}
+  
+.carousel-control {
+    color: #629c44 !important;
+}
+
+.carousel-control.right {
+    
+    background-image: none !important;
+}
+
+.carousel-control.left {
+    
+    background-image: none !important;
+}
+
+.carousel-control {
+ 
+     width: 5% !important;   
+}
+
+.btn-primary {
+    background-color: #4CAF50 !important; /* Green */
+    border: none !important;
+    border-radius: 0px !important;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.estadisticas-titulo {
+    font-family: 'Roboto', sans-serif;
+    color: #629c44 !important;
+}

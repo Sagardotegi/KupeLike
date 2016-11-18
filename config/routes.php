@@ -18,6 +18,10 @@
        require_once $project_root."index.php";
     });
     
+    $app->get('/map', function(){
+       require_once $project_root."templates/mapa.php";
+    });
+    
     $app->get('/sagardotegiak', function(){
         $sagardotegi = new SagardotegiController();
         require_once $project_root."src/vista/sagardotegi/index.php";

@@ -25,9 +25,11 @@
             /**
              * Devolvemos los datos de la consulta en formato JSON
              */ 
-            $archivo_json = $_SERVER['DOCUMENT_ROOT']."/src/vista/sagardotegi/json/sagardotegiak.json";
+            //$archivo_json = $_SERVER['DOCUMENT_ROOT']."/src/vista/sagardotegi/json/sagardotegiak.json";
             $json = json_encode($sagardotegis, JSON_PRETTY_PRINT);
-            file_put_contents($archivo_json, $json);
+            //file_put_contents($archivo_json, $json);
+            
+            return $json;
             exit(0);
         }
         

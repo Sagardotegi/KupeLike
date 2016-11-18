@@ -19,7 +19,7 @@ $(document).ready(function(){
      * Despliega la lista de sagardotegis
      */ 
     if(window.location.pathname == "/sagardotegiak"){
-        $.getJSON("./src/vista/sagardotegi/json/sagardotegiak.json", function(data){
+        $.getJSON("/sagardotegiak", function(data){
            $.each(data, function(key, val){
                $("#lista-sagardotegis").append("<div id='sagardotegi-" + val.sagar_id + "' class='thumbnail col-sm-12 col-md-3 col-md-offset-1'></div>");
                $("#sagardotegi-" + val.sagar_id).html(
